@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Image.AnnotationConfirmation"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUCCESS"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor= "@color/colorGreen"
+        android:singleLine="true"
+        android:paddingBottom="20dp"
+        android:id="@+id/Title"/>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Image Name"
+        android:textStyle="bold"
+        android:textColor= "@color/colorGreen"
+        android:id="@+id/img_name"
+        />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Image Width"
+        android:textStyle="bold"
+        android:textColor= "@color/colorGreen"
+        android:id="@+id/img_width"
+        />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Image height"
+        android:textStyle="bold"
+        android:textColor= "@color/colorGreen"
+        android:id="@+id/img_height"
+    />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Object Label"
+        android:textStyle="bold"
+        android:textColor= "@color/colorGreen"
+        android:id="@+id/img_label"
+    />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crop x cordinate"
+        android:textStyle="bold"
+        android:textColor= "@color/colorGreen"
+        android:id="@+id/crop_x_cord"
+    />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crop y Cordinate"
+        android:textStyle="bold"
+        android:textColor= "@color/colorGreen"
+        android:id="@+id/crop_y_cord"
+    />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Object Height"
+        android:textStyle="bold"
+        android:textColor= "@color/colorGreen"
+        android:id="@+id/crop_height"
+    />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Object Width"
+        android:textStyle="bold"
+        android:textColor= "@color/colorGreen"
+        android:id="@+id/crop_width"
+    />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textStyle="bold"
+        android:textColor= "@color/colorGreen"
+        android:id="@+id/img_location"
+        />
+
+</LinearLayout>

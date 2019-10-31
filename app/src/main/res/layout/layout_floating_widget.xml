@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutParent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <!-- this is the collapsed layout -->
+        <RelativeLayout
+            android:id="@+id/layoutCollapsed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/collapsed_iv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_app"/>
+
+            <ImageView
+                android:id="@+id/buttonClose"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="50dp"
+                android:src="@drawable/close_icon" />
+        </RelativeLayout>
+
+        <!-- this is the expanded layout -->
+        <LinearLayout
+            android:id="@+id/layoutExpanded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/expanded"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_app"
+                tools:ignore="ContentDescription"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:id="@+id/buttonSimplifiedCoding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                  <!--collapsed view 1   -->
+                <RelativeLayout
+                     android:id="@+id/layoutCollapsed1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content">
+
+                         <ImageButton
+                              android:id="@+id/play_btnn"
+                              android:layout_width="50dp"
+                              android:layout_height="50dp"
+                              android:layout_gravity="center_vertical"
+                              android:layout_marginStart="10dp"
+                              android:src="@drawable/ic_images"
+                              tools:ignore="ContentDescription"/>
+
+
+
+
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutExpanded1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:visibility="gone">
+
+                    <ImageButton
+                        android:id="@+id/play_btnn1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/ic_images"
+                        tools:ignore="ContentDescription"/>
+
+                    <LinearLayout
+                        android:id="@+id/buttonSimplifiedCoding1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <Button
+                            android:id="@+id/play_btno1"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="10dp"
+                            android:src="@mipmap/icon_cancel"
+                            tools:ignore="ContentDescription,HardcodedText"
+                            android:text="Annotate"/>
+                        <Button
+                            android:id="@+id/play_btno2"
+                            android:layout_width="80dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="10dp"
+                            android:src="@mipmap/icon_home"
+                            tools:ignore="ContentDescription,HardcodedText"
+                            android:text="Export"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!-- collapsed view 2-->
+                <RelativeLayout
+                    android:id="@+id/layoutCollapsed2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageButton
+                        android:id="@+id/play_btno"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:src="@mipmap/ic_text"
+                        tools:ignore="ContentDescription"/>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/layoutExpanded2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:visibility="gone">
+
+                    <ImageButton
+                        android:id="@+id/play_btno12"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:src="@mipmap/ic_text"
+                        tools:ignore="ContentDescription"/>
+                    <LinearLayout
+                        android:id="@+id/buttonSimplifiedCoding2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <Button
+                            android:id="@+id/play_btno3"
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="10dp"
+                            android:src="@mipmap/icon_home"
+                            tools:ignore="ContentDescription,HardcodedText"
+                            android:text="OCR"/>
+                        <Button
+                            android:id="@+id/play_btno5"
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="10dp"
+                            android:src="@mipmap/icon_search"
+                            tools:ignore="ContentDescription,HardcodedText"
+                            android:text="View"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>
